@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Genesys Sandbox Test</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <h1>Genesys Sandbox Test Page</h1>
+  <p>Environment: Sandbox</p>
+
+  <!-- CONFIG PANEL -->
+  <div class="card">
+    <h2>Configuration</h2>
+    <label>Select User:</label>
+    <select id="userSelect"></select>
+    <button onclick="applyUser()">Apply User</button>
+  </div>
+
+  <!-- ACTIVE USER -->
+  <div class="card">
+    <h2>Active User</h2>
+    <pre id="activeUser"></pre>
+  </div>
+
+  <!-- CHAT CONTROLS -->
+  <div class="card">
+    <h2>Chat Controls</h2>
+    <button onclick="openChat()">Open Chat</button>
+    <button onclick="resetSession()">Reset Session</button>
+  </div>
+
+  <!-- DEBUG -->
+  <div class="card">
+    <h2>Debug</h2>
+    <pre id="debugLog"></pre>
+  </div>
+
+  <!-- Load scripts -->
+  <script src="data/users.js"></script>
+  <script src="assets/app.js"></script>
+
+  <!-- Genesys snippet goes here later -->
+
+</body>
+</html>
